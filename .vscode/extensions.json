@@ -1,0 +1,14 @@
+{
+  "recommendations": [
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "mikestead.dotenv",
+    "csstools.postcss",
+    "gruntfuggly.todo-tree",
+    "moalamri.inline-fold",
+    "csstools.postcss",
+    "bradlc.vscode-tailwindcss",
+    "yoavbls.pretty-ts-errors",
+    "github.vscode-pull-request-github"
+  ]
+}
