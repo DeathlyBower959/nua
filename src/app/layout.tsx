@@ -11,9 +11,31 @@ const noto_sans = Noto_Sans({
 });
 
 export const metadata: Metadata = {
-  title: 'NUA',
+  title: 'nua',
   description:
     'Utility applications for everything you need; PDF editing, image modification, writing, and more!',
+
+  icons: [
+    {
+      url: '/logo/dark/favicon.ico',
+      type: 'image/x-icon',
+      media: '(prefers-color-scheme: light)',
+    },
+    {
+      url: '/logo/light/favicon.ico',
+      type: 'image/x-icon',
+      media: '(prefers-color-scheme: dark)',
+    },
+  ],
+
+  openGraph: {
+    type: 'website',
+    images: ['/logo/light/logo1200x628.png'],
+  },
+
+  twitter: {
+    card: 'summary_large_image',
+  },
 };
 
 export default function RootLayout({
@@ -25,9 +47,11 @@ export default function RootLayout({
     <html lang='en' suppressHydrationWarning>
       <body className={noto_sans.className}>
         <ThemeProvider>
-          <div className='flex min-h-screen'>
+          <div className='flex flex-col min-h-screen'>
             <Navbar />
-            {children}
+            <main className='flex flex-col flex-1 items-center'>
+              {children}
+            </main>
           </div>
         </ThemeProvider>
       </body>

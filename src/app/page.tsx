@@ -1,5 +1,12 @@
+import Link from 'next/link';
+
 export default function Home() {
   return (
-    <main className='bg-dark flex min-h-screen items-center justify-center text-white'></main>
+    <>
+      <h1 className='text-3xl'>Home</h1>
+      <Link href='/apps' className='underline'>
+        Apps
+      </Link>
+    </>
   );
 }

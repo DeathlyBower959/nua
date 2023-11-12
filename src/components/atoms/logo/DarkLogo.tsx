@@ -1,6 +1,6 @@
-import * as React from 'react';
+import { memo, type SVGProps } from 'react';
 
-function DarkLogo(props: React.SVGProps<SVGSVGElement>) {
+function DarkLogo(props: SVGProps<SVGSVGElement>) {
   return (
     <svg viewBox='0 0 401 123' fill='none' {...props}>
       <g filter='url(#prefix__filter0_i_2_60)'>
@@ -150,5 +150,5 @@ function DarkLogo(props: React.SVGProps<SVGSVGElement>) {
   );
 }
 
-const MemoDarkLogo = React.memo(DarkLogo);
+const MemoDarkLogo = memo(DarkLogo);
 export default MemoDarkLogo;
