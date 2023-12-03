@@ -19,7 +19,7 @@ export default function SettingsModal() {
   const [open, setOpen] = useState(false);
   return (
     <Dialog open={open} onOpenChange={setOpen}>
-      <DialogTrigger>
+      <DialogTrigger aria-label='settings'>
         <Settings size={28} />
       </DialogTrigger>
       <DialogContent className='sm:max-w-[425px]'>

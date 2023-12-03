@@ -15,6 +15,8 @@ export const metadata: Metadata = {
   description:
     'Utility applications for everything you need; PDF editing, image modification, writing, and more!',
 
+  metadataBase: new URL('https://nua.vercel.app'),
+
   icons: [
     {
       url: '/logo/dark/favicon.ico',
