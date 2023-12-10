@@ -1,16 +1,16 @@
 import Link from 'next/link';
 
-import type { IMeta } from '~/app/apps';
+import type { IModule } from '~/lib/modules';
 
-export default function AppGridCell({ meta }: { meta: IMeta }) {
+export default function AppGridCell({ meta }: { meta: IModule }) {
   return (
     <Link
-      href={`/apps/${meta.parent}`}
+      href={`/apps/${meta.route_name}`}
       className='bg-secondary rounded-xl p-4 flex flex-col gap-2'
     >
-      <h2>{meta.name}</h2>
-      <p>{meta.description}</p>
-      {meta.tags.map(tag => (
+      <h2>{meta.metadata.name}</h2>
+      <p>{meta.metadata.description}</p>
+      {meta.metadata.tags.map(tag => (
         <p key={tag}>{tag}</p>
       ))}
     </Link>

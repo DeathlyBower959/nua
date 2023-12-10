@@ -1,7 +1,9 @@
-import type { IMetaData } from '../..';
+import type { IModuleMetadata } from '~/lib/modules';
 
-export const app_meta: IMetaData = {
+const metadata: IModuleMetadata = {
   name: 'Example 2',
   description: 'An outline for the main function and purpose of this app.',
   tags: ['miscellaneous'],
 };
+
+export default metadata;

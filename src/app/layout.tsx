@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
+import '~/lib/registerModules';
 
 import { Noto_Sans } from 'next/font/google';
 import Navbar from '~/components/Navbar';
