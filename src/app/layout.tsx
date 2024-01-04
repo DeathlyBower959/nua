@@ -1,11 +1,13 @@
-import type { Metadata } from 'next';
 import './globals.css';
-import '~/lib/registerModules';
+import '~/lib/apps/registerModules';
+import '~/lib/embeds/registerModules';
 
 import { Noto_Sans } from 'next/font/google';
 import Navbar from '~/components/Navbar';
 import ThemeProvider from '~/providers/theme';
+import { Toaster } from '~/ui';
 
+import type { Metadata } from 'next';
 const noto_sans = Noto_Sans({
   weight: ['400'],
   subsets: ['latin'],
@@ -55,6 +57,7 @@ export default function RootLayout({
             <main className='flex flex-col flex-1 items-center'>
               {children}
             </main>
+            <Toaster richColors />
           </div>
         </ThemeProvider>
       </body>

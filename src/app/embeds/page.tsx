@@ -1,12 +1,12 @@
 import AppGridCell from '~/components/apps/AppGridCell';
-import { getAllModules } from '~/lib/apps/modules';
+import { getAllModules } from '~/lib/embeds/modules';
 
 import type { Metadata } from 'next';
 export const metadata: Metadata = {
-  title: 'nua | apps',
+  title: 'nua | embeds',
 };
 
-export default function Apps() {
+export default function Embeds() {
   // FIX: modules is [] on first render
   const modules = getAllModules();
 
@@ -15,7 +15,7 @@ export default function Apps() {
     <div className='flex flex-wrap justify-center gap-4 px-4'>
       {modules.map(meta => (
         <AppGridCell
-          group='apps'
+          group='embeds'
           key={meta.metadata.name.trim().replace(' ', '-').toLowerCase()}
           meta={meta}
         />

@@ -7,6 +7,9 @@ export default function Home() {
       <Link href='/apps' className='underline'>
         Apps
       </Link>
+      <Link href='/embeds' className='underline'>
+        Embeds
+      </Link>
     </>
   );
 }

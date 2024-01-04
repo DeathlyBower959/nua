@@ -1,8 +1,8 @@
 'use client';
 import { useTheme } from 'next-themes';
 import { useEffect, useState } from 'react';
+import { Select } from '~/ui';
 import {
-  Select,
   SelectContent,
   SelectItem,
   SelectTrigger,

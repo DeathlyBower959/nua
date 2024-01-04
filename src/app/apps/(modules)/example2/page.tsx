@@ -1,4 +1,6 @@
 import type { Metadata } from 'next';
+import { AppHeader, AppWrapper } from '~/components/apps/global';
+
 import app_meta from './metadata';
 
 export const metadata: Metadata = {
@@ -6,5 +8,9 @@ export const metadata: Metadata = {
 };
 
 export default function App() {
-  return <div>Example2 App</div>;
+  return (
+    <AppWrapper>
+      <AppHeader>Example2 App</AppHeader>
+    </AppWrapper>
+  );
 }

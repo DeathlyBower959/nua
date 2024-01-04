@@ -1,4 +1,4 @@
-import type { IModuleMetadata } from '~/lib/modules';
+import type { IModuleMetadata } from '~/lib/apps/modules';
 
 const metadata: IModuleMetadata = {
   name: 'Example 1',

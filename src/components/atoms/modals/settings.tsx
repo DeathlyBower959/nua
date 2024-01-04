@@ -1,7 +1,7 @@
 'use client';
 import { Settings } from 'lucide-react';
 import { useState } from 'react';
-import { Button } from '~/ui/button';
+import { Button, Label } from '~/ui';
 import {
   Dialog,
   DialogContent,
@@ -11,7 +11,6 @@ import {
   DialogTitle,
   DialogTrigger,
 } from '~/ui/dialog';
-import { Label } from '~/ui/label';
 
 import ThemeSwitch from '../ThemeChanger';
 
