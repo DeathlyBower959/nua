@@ -49,8 +49,6 @@ pnpm dev
 ```markdown
 ├── README.md
 ├── .github
-├── .husky
-├── .vscode
 ├── public
 ├── src
 │ ├── app
@@ -58,10 +56,6 @@ pnpm dev
 │ ├── lib
 │ ├── providers
 ├── LICENSE
-├── .gitignore # gitignore
-├── next.config.js # NextJS configuration
-├── postcss.config.js # PostCSS configuration
-├── tailwind.config.js
 ```
 
 ## 👤 Authors

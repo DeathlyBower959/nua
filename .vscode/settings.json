@@ -36,6 +36,8 @@
     "cssnano",
     "linebreak",
     "Parens",
+    "Pomodoro",
+    "renderoption",
     "tailwindcss",
     "tsbuildinfo"
   ],
@@ -47,5 +49,6 @@
   },
   "[postcss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  } // Don't run prettier for files listed in .gitignore
+  },
+  "todo-tree.tree.scanMode": "workspace only" // Don't run prettier for files listed in .gitignore
 }
