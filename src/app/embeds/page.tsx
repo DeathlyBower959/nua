@@ -1,5 +1,5 @@
 import AppGridCell from '~/components/apps/AppGridCell';
-import { getAllModules } from '~/lib/embeds/modules';
+import { getAllModules } from '~/lib/modules/embeds/modules';
 
 import type { Metadata } from 'next';
 export const metadata: Metadata = {

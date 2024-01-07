@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import type { IModule } from '~/lib/apps/modules';
+import type { IModule } from '~/lib/modules';
 
 export default function AppGridCell({
   meta,

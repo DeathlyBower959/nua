@@ -1,6 +1,6 @@
 import './globals.css';
-import '~/lib/apps/registerModules';
-import '~/lib/embeds/registerModules';
+import '~/lib/modules/apps/registerModules';
+import '~/lib/modules/embeds/registerModules';
 
 import { Noto_Sans } from 'next/font/google';
 import Navbar from '~/components/Navbar';

@@ -1,14 +1,4 @@
-type ITag = 'document' | 'converter' | 'fun' | 'miscellaneous';
-export interface IModuleMetadata {
-  name: string;
-  description: string;
-  tags: ITag[];
-}
-
-export interface IModule {
-  route_name: string;
-  metadata: IModuleMetadata;
-}
+import type { IModule, IModuleMetadata } from '../';
 
 let moduleRegistry: IModule[] = [];
 
