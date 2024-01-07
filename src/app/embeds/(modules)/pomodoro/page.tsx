@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { toast } from 'sonner';
 import { AppHeader, AppWrapper } from '~/components/apps/global';
-import { generateUrl } from '~/lib/utils';
+import { generateEmbedsUrl } from '~/lib/utils';
 import { Button } from '~/ui';
 
 import { SettingsInputs } from './view/components/SettingsInputs';
@@ -29,7 +29,7 @@ export default function Page() {
         <Button
           onClick={() => {
             navigator.clipboard
-              .writeText(generateUrl(schemaParams, data))
+              .writeText(generateEmbedsUrl('pomodoro', schemaParams, data))
               .catch(err => {
                 console.error(err);
                 toast.error('Failed to copy to clipboard!', {
