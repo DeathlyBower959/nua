@@ -12,7 +12,8 @@
     "lint": "next lint",
     "check-types": "tsc --noEmit --pretty",
     "format": "next lint --fix && prettier '**/*.{json,js,ts,jsx,tsx,html,yaml}' --write --ignore-path .gitignore",
-    "ui": "pnpm exec shadcn-ui add"
+    "ui": "pnpm exec shadcn-ui add",
+    "clean_deps": "rm -rf .pnpm-store && rm -rf node_modules && rm -rf .next"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.0.5",

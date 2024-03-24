@@ -38,6 +38,14 @@ cd nua
 pnpm install
 ```
 
+Optional: Reopen the project in the provided [dev container](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
+
+```bash
+VSCode
+- Ctrl + Shift + P
+- Dev Containers: Reopen in Container
+```
+
 Then, run the app in development locally:
 
 ```bash
